@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        1.引入 需要的依赖库
+    -->
+    <script src="https://cn.vuejs.org/js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <span v-bind：title="title">你好！</span>
+        <button v-on:click="btnClick">点击</button>
+        <img v-bind:src="src" alt="" id="img">
+    </div>
+    
+</body>
+<script>
+    // 引入数据内容函数
+    let vm = new Vue({
+        el:"#app",
+        data:{
+            title:"看到啦lalala",
+            src:""
+        },
+        methods:{
+            btnClick:function(){
+                //修改图片地址
+            this.src = "http://img3.cache.netease.com/photo/0026/2016-09-22/C1J71ODR3ONH0026.jpg"
+            
+            }
+        },
+    })
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        1.引入 需要的依赖库
+    -->
+    <script src="https://cn.vuejs.org/js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <span v-if="title">{{src}}</span>
+        <span v-show="title">{{src}}</span>
+    </div>
+    
+</body>
+<script>
+    // 引入数据内容函数
+    let vm = new Vue({
+        el:"#app",
+        data:{
+            //title:true,
+            title:false,
+            src:"各位美女帅哥好！"
+        },
+    })
+</script>
+</html>

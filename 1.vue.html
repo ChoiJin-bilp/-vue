@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        1。引入 需要的依赖库
+    -->
+    <script src="https://cn.vuejs.org/js/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        
+        <!-- <p id="massage">{{massage}}</p> -->
+        <p>{{massage}}</p>
+    </div>
+</body>
+    <script> 
+    //document.getElementById("massage").innerHTML = "Hello 各位帅哥美女"
+    let vm = new Vue({
+        el:"#app",
+        data:{
+            massage:"Hello 各位帅哥美女好"
+        }
+    })
+    </script>
+</html>
